@@ -15,13 +15,13 @@ from pyrogram.types import InlineKeyboardMarkup, Message
 
 from config import BANNED_USERS
 from strings import get_command, get_string, helpers
-from YukkiMusic import app
-from YukkiMusic.misc import SUDOERS
-from YukkiMusic.utils import help_pannel
-from YukkiMusic.utils.database import get_lang, is_commanddelete_on
-from YukkiMusic.utils.decorators.language import (LanguageStart,
+from CilikMusic import app
+from CilikMusic.misc import SUDOERS
+from CilikMusic.utils import help_pannel
+from CilikMusic.utils.database import get_lang, is_commanddelete_on
+from CilikMusic.utils.decorators.language import (LanguageStart,
                                                   languageCB)
-from YukkiMusic.utils.inline.help import (help_back_markup,
+from CilikMusic.utils.inline.help import (help_back_markup,
                                           private_help_panel)
 
 ### Command
