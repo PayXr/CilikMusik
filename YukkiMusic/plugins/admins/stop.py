@@ -12,10 +12,10 @@ from pyrogram.types import Message
 
 from config import BANNED_USERS
 from strings import get_command
-from YukkiMusic import app
-from YukkiMusic.core.call import Yukki
-from YukkiMusic.utils.database import set_loop
-from YukkiMusic.utils.decorators import AdminRightsCheck
+from CilikMusic import app
+from CilikMusic.core.call import Yukki
+from CilikMusic.utils.database import set_loop
+from CilikMusic.utils.decorators import AdminRightsCheck
 
 # Commands
 STOP_COMMAND = get_command("STOP_COMMAND")
