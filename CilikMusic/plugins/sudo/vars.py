@@ -16,7 +16,7 @@ from strings import get_command
 from CilikMusic import app
 from CilikMusic.misc import SUDOERS
 from CilikMusic.utils.database.memorydatabase import get_video_limit
-from CilikMusic.formatters import convert_bytes
+from CilikMusic.utils.formatters import convert_bytes
 
 VARS_COMMAND = get_command("VARS_COMMAND")
 
