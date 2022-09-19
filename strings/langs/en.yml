@@ -36,16 +36,16 @@ auth_7 : "**Authorised Users List[AUL]:**\n\n"
 auth_8 : "┗ Added By:-"
 
 # PLUGINS - Admins
-admin_1 : "Music is already Paused."
-admin_2 : "🎧 Voicechat Paused by {}!"
-admin_3 : "Music is already resumed."
-admin_4 : "🎧 Voicechat Resumed by {}!"
-admin_5 : "Music is already muted."
-admin_6 : "🎧 Voicechat Muted by {}!"
-admin_7 : "Music is already unmuted."
-admin_8 : "🎧 Voicechat Unmuted by {}!"
-admin_9 : "🎧 Voicechat End/Stopped by {}!"
-admin_10 : "🎧 Voicechat Skipped by {}!. No More Music in Queue."
+admin_1 : "**Music is already Paused.**"
+admin_2 : "**🎧 Voicechat Paused by {}!**"
+admin_3 : "**Music is already resumed.**"
+admin_4 : "**🎧 Voicechat Resumed by {}!**"
+admin_5 : "**Music is already muted.**"
+admin_6 : "**🎧 Voicechat Muted by {}!**"
+admin_7 : "**Music is already unmuted.**"
+admin_8 : "**🎧 Voicechat Unmuted by {}!**"
+admin_9 : "**🎧 Voicechat End/Stopped by {}!**"
+admin_10 : "**🎧 Voicechat Skipped by {}!. No More Music in Queue.**"
 admin_11 : "Error while changing stream to **{0}**\n\nPlease use /skip again."
 admin_12 : "Unable to skip to a specific track because of enabled loop play. Please disable loop play via `/loop disable` to use this feature."
 admin_13 : "Please use numeric numbers for specific tracks, like 1, 2 or 4 etc"
@@ -87,9 +87,9 @@ help_1 : "Click on the buttons below for more information. If you're facing any 
 help_2 : "Contact me in PM for help."
 
 # Settings
-setting_1 : "⚙️ **Music Bot Settings**\n\n🖇**Group:** {0}\n🔖**Group ID:** `{1}`\n\n💡**Choose the function buttons from below which you want to edit or change.**"
-setting_3 : "⁉️ What is This?\n\n1) Direct: Plays search queries directly. Use -v to play videos in direct mode.\n\n2) Inline: Returns Inline Markup Buttons for choosing between video & audio."
-setting_4 : "⁉️ What is This?\n\n👥 Everyone: Anyone can use admin commands(skip, pause, resume etc) present in this group.\n\n🙍 Admin Only: Only admins and authorized users can use admin commands."
+setting_1 : "⚙️ **Music Bot Settings**\n\n🖇**Group ⋙** {0}\n🔖**Group ID ⋙** `{1}`\n\n💡 **Choose the function buttons from below which you want to edit or change.**"
+setting_3 : "⁉️ What is This?\n\n1) Direct ⋙ Plays search queries directly. Use -v to play videos in direct mode.\n\n2) Inline: Returns Inline Markup Buttons for choosing between video & audio."
+setting_4 : "⁉️ What is This?\n\n👥 Everyone: Anyone can use admin commands(skip, pause, resume etc) present in this group.\n\n🙍 Admin Only ⋙ Only admins and authorized users can use admin commands."
 setting_5 : "No Authorized Users Found\n\nYou can allow any non-admin to use my admin commands by /auth and delete by using /unauth"
 setting_9 : "⁉️ What is This?\n\nWhen activated, Bot will delete its message after {0} to make your chat clean and clear."
 setting_10 : "⁉️ What is This?\n\n1) Group: Plays music in the group where the command is given .\n\n2) Channel: Plays music in the channel you want. Set channel id via /channelplay"
@@ -142,8 +142,8 @@ cplay_5 : "Only Channels are supported."
 cplay_6 : "You need to be the **Owner** of the channel[{0}] to connect it with this group.\n**Channel's Owner:** @{1}\n\nAlternatively you can link your group to that channel and then try connnecting with `/channelplay linked`"
 
 #Play
-play_1 : "🔄 Processing Query... Please Wait!"
-play_2 : "**🏷Channel Play Mode**\n\n🔄 Processing Query... Please Wait!\n**Linked Channel:** {0}"
+play_1 : "**🔄 Processing Query...**"
+play_2 : "**🏷 Channel Play Mode**\n\n🔄 Processing Query... Please Wait!\n**Linked Channel:** {0}"
 play_3 : "Failed to Process Query!"
 play_4 : "🖇 **Admins Only Play**\nOnly Admins and Auth Users can play music in this group.\n\nChange mode via /playmode and if you're already admin, reload admincache via /admincache"
 play_5 : "Failed to process audio file.\n\nAudio File Size Should Be Less Than 100 mb"
@@ -152,7 +152,7 @@ play_7 : "Sorry! Bot only allows limited number of video calls due to CPU overlo
 play_8 : "Not A Valid Video File Extension!\n\n**Supported Formats:** {0}"
 play_9 : "Video File Size Should Be Less Than 1 GiB"
 play_10 : "**Youtube Playlist Feature**\n\nSelect the Mode in which you want to play whole Youtube Playlist"
-play_11 : "📎Title: **{0}\n\n⏳Duration:** {1} Mins"
+play_11 : "📀 Title ⋙ **{0}\n\n⏰ Duration ⋙** {1} Mins"
 play_12 : "**Spotify Play Mode**\n\nRequested By:- {0}"
 play_13 : "**Apple Playlists**\n\nRequested By:- {0}"
 play_14 : "**Unable to verify the URL.**\nBot wonders if this url belongs to any of the following platforms: Youtube, AppleMusic, Spotify, Resso and Soundcloud.\n\nYou can use /stream for M3u8 or Remote Links."
@@ -180,7 +180,7 @@ playlist_14 : "**Are you Sure you want to delete your whole playlist?**\n\nYou'l
 playlist_15 : "[Checkout Whole Playlist]({0})"
 playlist_16 : "Queued Playlist:"
 playlist_17 : "Queued Position-"
-playlist_18 : "[Checkout Whole Queued Playlist]({0})\n\nLast Queued Position : **{1}**"
+playlist_18 : "[Checkout Whole Queued Playlist]({0})\n\nLast Queued Position ⋙ **{1}**"
 
 #Playmode
 playmode_1 : "Select the mode in which you want to play the queries inside your group[{0}]."
@@ -192,7 +192,7 @@ str_2 : "✅ Valid Stream Verified\n\nPlease wait processing link.."
 str_3 : "Unable to stream youtube live streams. No Live Format Found"
 
 #TopPlay
-tracks_1 : "**Processing {0} Top 10 Playlist**\nThis could take some mins(around 3-4 mins).. Please Wait...\n\n**👤Requested By:** {1}\n\nCheck Top 10 tracks by /gstats"
+tracks_1 : "**Processing {0} Top 10 Playlist**\nThis could take some mins(around 3-4 mins).. Please Wait...\n\n**👤Requested By ⋙** {1}\n\nCheck Top 10 tracks by /gstats"
 tracks_2 : "**Error**\n\nThere's no **{0} Top 10 Playlist** on bot's servers. Please try any other playlist"
 
 # TOOLS
@@ -205,7 +205,7 @@ lyrics_4 : "Click on the button below and get searched lyrics to avoid long spam
 
 #Ping
 ping_1 : "Pong!!!!"
-ping_2 : "{0} is working good with a ping of `{1}` ms.\n\nBot's uptime is {2} and has used a total of {3} server's storage. Cpu load is about {4} with a consumption of {5} Ram. Py-Tgcalls client is also having a good ping of `{6}` ms."
+ping_2 : "**Pong!**\n`⚡{1} ms`\n\n<b><u> System Stats:</u></b>\nUptime : {2} \nRam : {4} \nCpu : {4} \nDisk : {3}"
 
 
 # Song
@@ -225,25 +225,25 @@ song_11 : "Uploading Started\n\nUploading speed could be slow. Please hold on.."
 queue_1 : "Please Wait..Fetching Queue.."
 queue_2 : "Queued List is empty. No tracks found"
 queue_3 : "<u>**Queued Tracks:</u>**  [Checkout More Queued Tracks From Here]({0})"
-queue_4 : "⏳ Added to Queue at **#{0}\n\n💡Title:** {1}\n**⏱Duration:** {2}\n👤**Added By:** {3}"
+queue_4 : "⏳ Added to Queue at **#{0}\n\n📀 Title ⋙** {1}\n⏰ **Duration ⋙** {2}\n🧸 **Added By ⋙** {3}"
 queue_5 : "Only one track inside queue, Please add some more to check list"
 
 # All Streaming Lines
-stream_1 : "📡 **Started Streaming** 💡\n\n👤**Requested By:** {0}\n🔦**Information: **[Here]({1})"
-stream_2 : "📡 **Started Streaming via URL ** 💡\n\n👤**Requested By:** {0}"
-stream_3 : "📡 **Started Streaming** 💡\n\n**🏷Title:** {0}\n⌛️**Duration**: {1}\n👤**Requested By:** {2}"
-stream_4 : "📡 **Started Streaming** 💡\n\n**🏷Title:** [{0}]({1})\n⌛️**Duration**: {2}\n👤**Requested By:** {3}"
+stream_1 : "🎥 **Started Streaming** 💡\n\n🧸 **Requested By ⋙** {0}\n📮 **Information ⋙** [Here]({1})"
+stream_2 : "🎥 **Started Streaming via URL** 💡\n\n🧸 **Requested By ⋙** {0}"
+stream_3 : "🎥 **Started Streaming** 💡\n\n**📀 Title ⋙** {0}\n⏰ **Duration** ⋙ {1}\n🧸 **Requested By ⋙** {2}"
+stream_4 : "🎥 **Started Streaming** 💡\n\n**📀 Title ⋙** [{0}]({1})\n⏰ **Duration** ⋙ {2}\n🧸 **Requested By ⋙** {3}"
 
 # Inline Buttons
 
 #General Buttons
 CLOSE_BUTTON  : "🗑 Close"
-CLOSEMENU_BUTTON  : "🗑 Close Menu"
+CLOSEMENU_BUTTON  : "🗑 Close"
 BACK_BUTTON : "⬅ Back"
 UNBAN_BUTTON : "🗑 Unban Assistant"
 
 #Lyrics
-L_B_1 : "🚀 Checkout Lyrics Now"
+L_B_1 : "🚀 Checkout Lyrics"
 
 # Start
 S_B_1 : "🗒 Commands"
@@ -251,16 +251,16 @@ S_B_2 : "🔧 Settings"
 S_B_3 : "📨 Support"
 S_B_4 : "📨 Channel"
 S_B_5 : "✚ Add me to your Group"
-S_B_6 : "💡 Git Repo"
-S_B_7 : "👤 Bot Owner"
-S_B_8 : "🔎 How to Use? Commands Menu."
+S_B_6 : "💾 Git Repo"
+S_B_7 : "🧸 Bot Owner"
+S_B_8 : "🗂 Commands Menu"
 
 #Help 
 H_B_1 : "Admin Commands"
 H_B_2 : "Play Commands"
 H_B_3 : "Bot Commands"
 H_B_4 : "Extra Commands"
-H_B_5 : "Close Menu"
+H_B_5 : "🗑 Close"
 H_B_6 : "SudoUser Commands"
 
 #PlayMode
@@ -276,8 +276,8 @@ P_B_4 : "🎵 Play Playlist"
 
 #Playlist
 PL_B_1 : "🚀 Play Playlist"
-PL_B_2 : "✚ Playlists"
-PL_B_3 : "✚ CPanel"
+PL_B_2 : "✚ Playlist"
+PL_B_3 : "🗂 Menu"
 PL_B_4 : "📡 Play Mode"
 PL_B_5 : "🔄 Del Whole Playlist"
 PL_B_6 : "↗️ Delete Playlist"
@@ -305,7 +305,7 @@ ST_B_14 : "✅ Enabled"
 ST_B_15 : "❌ Disabled"
 ST_B_16 : "👤 Admins"
 ST_B_17 : "👥 Everyone"
-ST_B_18 : "📋 Authorized Users Lists"
+ST_B_18 : "📋 Authorized Users"
 ST_B_19 : "🔎 Search Mode"
 ST_B_20 : "✅ Direct"
 ST_B_21 : "✅ Inline"
@@ -442,7 +442,7 @@ gban_10 : "No Gbanned Users Found."
 gban_11 : "Please wait a while.. Fetching Gbanned users list"
 
 #Suggestions
-sug_0 : "❓**Do You Know?**\n\n✅ "
+sug_0 : "❓**Do You Know?**\n\n✅"
 sug_1 : "You can play music in two **search modes** i.e. Direct Mode and Inline Mode.\n\nChange modes via /playmode"
 sug_2 : "You can play music in two **play types** i.e. Everyone Mode and Admins Mode.\n\nChange modes via /playmode"
 sug_3 : "You can play music in **channels** too.\n\nSet channel_id via /channelplay and play via /cplay "
