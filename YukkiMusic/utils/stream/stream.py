@@ -14,20 +14,20 @@ from typing import Union
 from pyrogram.types import InlineKeyboardMarkup
 
 import config
-from YukkiMusic import Carbon, YouTube, app
-from YukkiMusic.core.call import Yukki
-from YukkiMusic.misc import db
-from YukkiMusic.utils.database import (add_active_chat,
+from CilikMusic import Carbon, YouTube, app
+from CilikMusic.core.call import Yukki
+from CilikMusic.misc import db
+from CilikMusic.utils.database import (add_active_chat,
                                        add_active_video_chat,
                                        is_active_chat,
                                        is_video_allowed, music_on)
-from YukkiMusic.utils.exceptions import AssistantErr
-from YukkiMusic.utils.inline.play import (stream_markup,
+from CilikMusic.utils.exceptions import AssistantErr
+from CilikMusic.utils.inline.play import (stream_markup,
                                           telegram_markup)
-from YukkiMusic.utils.inline.playlist import close_markup
-from YukkiMusic.utils.pastebin import Yukkibin
-from YukkiMusic.utils.stream.queue import put_queue, put_queue_index
-from YukkiMusic.utils.thumbnails import gen_thumb
+from CilikMusic.utils.inline.playlist import close_markup
+from CilikMusic.utils.pastebin import Yukkibin
+from CilikMusic.utils.stream.queue import put_queue, put_queue_index
+from CilikMusic.utils.thumbnails import gen_thumb
 
 
 async def stream(
