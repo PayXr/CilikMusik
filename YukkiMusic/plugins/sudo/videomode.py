@@ -12,10 +12,10 @@ from pyrogram.types import Message
 
 import config
 from strings import get_command
-from YukkiMusic import app
-from YukkiMusic.misc import SUDOERS
-from YukkiMusic.utils.database import add_off, add_on
-from YukkiMusic.utils.decorators.language import language
+from CilikMusic import app
+from CilikMusic.misc import SUDOERS
+from CilikMusic.utils.database import add_off, add_on
+from CilikMusic.utils.decorators.language import language
 
 # Commands
 VIDEOMODE_COMMAND = get_command("VIDEOMODE_COMMAND")
