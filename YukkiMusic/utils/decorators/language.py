@@ -9,8 +9,8 @@
 
 
 from strings import get_string
-from YukkiMusic.misc import SUDOERS
-from YukkiMusic.utils.database import (get_lang, is_commanddelete_on,
+from CilikMusic.misc import SUDOERS
+from CilikMusic.utils.database import (get_lang, is_commanddelete_on,
                                        is_maintenance)
 
 
