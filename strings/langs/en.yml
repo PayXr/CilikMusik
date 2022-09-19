@@ -152,7 +152,7 @@ play_7 : "ℹ️ Sorry! Bot only allows limited number of video calls due to CPU
 play_8 : "ℹ️ Not A Valid Video File Extension!\n\n**Supported Formats:** {0}"
 play_9 : "ℹ️ Video File Size Should Be Less Than 1 GiB"
 play_10 : "**Youtube Playlist Feature**\n\nSelect the Mode in which you want to play whole Youtube Playlist"
-play_11 : "📀 Title ⋙ **{0}\n\n⏰ Duration ⋙** {1} Mins"
+play_11 : "**📀 Title ⋙ ** {0}\n\n**⏰ Duration ⋙** {1} Mins"
 play_12 : "**Spotify Play Mode**\n\nRequested By:- {0}"
 play_13 : "**Apple Playlists**\n\nRequested By:- {0}"
 play_14 : "**Unable to verify the URL.**\nBot wonders if this url belongs to any of the following platforms: Youtube, AppleMusic, Spotify, Resso and Soundcloud.\n\nYou can use /stream for M3u8 or Remote Links."
@@ -192,7 +192,7 @@ str_2 : "✅ Valid Stream Verified\n\nPlease wait processing link.."
 str_3 : "Unable to stream youtube live streams. No Live Format Found"
 
 #TopPlay
-tracks_1 : "🔄 **Processing {0} Top 10 Playlist**\nThis could take some mins(around 3-4 mins).. Please Wait...\n\n**👤Requested By ⋙** {1}\n\nCheck Top 10 tracks by /gstats"
+tracks_1 : "🔄 **Processing {0} Top 10 Playlist**\nThis could take some mins(around 3-4 mins).. Please Wait...\n\n**👤Requested By ** {1}\n\nCheck Top 10 tracks by /gstats"
 tracks_2 : "❌ Error**\n\nThere's no **{0} Top 10 Playlist** on bot's servers. Please try any other playlist"
 
 # TOOLS
@@ -231,8 +231,8 @@ queue_5 : "Only one track inside queue, Please add some more to check list"
 # All Streaming Lines
 stream_1 : "🎥 **Started Streaming** 💡\n\n🧸 **Requested By ⋙** {0}\n📮 **Information ⋙** [Here]({1})"
 stream_2 : "🎥 **Started Streaming via URL** 💡\n\n🧸 **Requested By ⋙** {0}"
-stream_3 : "🎥 **Started Streaming** 💡\n\n**📀 Title ⋙** {0}\n⏰ **Duration** ⋙ {1}\n🧸 **Requested By ⋙** {2}"
-stream_4 : "🎥 **Started Streaming** 💡\n\n**📀 Title ⋙** [{0}]({1})\n⏰ **Duration** ⋙ {2}\n🧸 **Requested By ⋙** {3}"
+stream_3 : "🎥 **Started Streaming** 💡\n\n**📀 Title ⋙** {0}\n⏰ **Duration ⋙** {1}\n🧸 **Requested By ⋙** {2}"
+stream_4 : "🎥 **Started Streaming** 💡\n\n**📀 Title ⋙** [{0}]({1})\n⏰ **Duration ⋙** {2}\n🧸 **Requested By ⋙** {3}"
 
 # Inline Buttons
 
