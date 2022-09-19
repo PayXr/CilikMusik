@@ -17,7 +17,7 @@ from pytgcalls.exceptions import NoActiveGroupCall
 import config
 from config import BANNED_USERS
 from CilikMusic import LOGGER, app, userbot
-from CilikMusic.core.call import Yukki
+from CilikMusic.core.call import Cilik
 from CilikMusic.plugins import ALL_MODULES
 from CilikMusic.utils.database import get_banned_users, get_gbanned
 
@@ -33,7 +33,7 @@ async def init():
         and not config.STRING5
     ):
         LOGGER("CilikMusic").error(
-            "No Assistant Clients Vars Defined!.. Exiting Process."
+            "Tidak Ada Asisten Klien yang Ditentukan Vars!.. Proses Keluar."
         )
         return
     if (
@@ -41,7 +41,7 @@ async def init():
         and not config.SPOTIFY_CLIENT_SECRET
     ):
         LOGGER("CilikMusic").warning(
-            "No Spotify Vars defined. Your bot won't be able to play spotify queries."
+            "Tidak ada Spotify Vars yang ditentukan. Bot Anda tidak akan dapat memainkan kueri spotify."
         )
     try:
         users = await get_gbanned()
@@ -59,19 +59,19 @@ async def init():
         "Successfully Imported Modules "
     )
     await userbot.start()
-    await Yukki.start()
+    await Cilik.start()
     try:
-        await Yukki.stream_call(
+        await Cilik.stream_call(
             "http://docs.evostream.com/sample_content/assets/sintel1m720p.mp4"
         )
     except NoActiveGroupCall:
         LOGGER("CilikMusic").error(
-            "[ERROR] - \n\nPlease turn on your Logger Group's Voice Call. Make sure you never close/end voice call in your log group"
+            "[ERROR] - \n\nHarap aktifkan Obrolan Suara Grup Logger Anda. Pastikan Anda tidak pernah menutup/mengakhiri panggilan suara di grup log Anda"
         )
         sys.exit()
     except:
         pass
-    await Yukki.decorators()
+    await Cilik.decorators()
     LOGGER("CilikMusic").info("Cilik Music Bot Started Successfully")
     await idle()
 
