@@ -12,7 +12,7 @@ from datetime import datetime
 
 import config
 from CilikMusic import app
-from CilikMusic.core.call import Yukki, autoend
+from CilikMusic.core.call import Cilik, autoend
 from CilikMusic.utils.database import (get_client, is_active_chat,
                                        is_autoend)
 
@@ -73,13 +73,13 @@ async def auto_end():
                     continue
                 autoend[chat_id] = {}
                 try:
-                    await Yukki.stop_stream(chat_id)
+                    await Cilik.stop_stream(chat_id)
                 except:
                     continue
                 try:
                     await app.send_message(
                         chat_id,
-                        "Bot has left voice chat due to inactivity to avoid overload on servers. No-one was listening to the bot on voice chat.",
+                        "ℹ️ Bot telah meninggalkan obrolan suara karena tidak aktif untuk menghindari kelebihan beban di server. Tidak ada yang mendengarkan bot di obrolan suara.",
                     )
                 except:
                     continue
